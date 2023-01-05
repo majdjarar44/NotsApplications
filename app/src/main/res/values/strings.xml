@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Notes Application</string>
+    <string name="error_title">Oops</string>
+    <string name="title">Title</string>
+    <string name="note">Note</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="message_success_update_note">Update Note Success</string>
+    <string name="message_success_insert_note"> Insert Note Success</string>
+    <string name="message_must_input_note">Must input Note</string>
+    <string name="message_must_input_title">Must input Title</string>
+    <string name="welcom_message">Hello ,Add Your Notes Here by click on bottom image ,easily use
+ application can update on note by click on pen,and swipe to delete it from list </string>
+</resources>

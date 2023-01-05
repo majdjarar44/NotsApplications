@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تطبيق الملاحظات</string>
+    <string name="error_title">عفوًا</string>
+    <string name="title">العنوان</string>
+    <string name="note">الملاحظه</string>
+    <string name="save">حفظ</string>
+    <string name="update">تحديث</string>
+    <string name="message_success_update_note">تم تحديث الملاحظة بنجاح</string>
+    <string name="message_success_insert_note">  تم آضافةالملاحظة بنجاح</string>
+    <string name="message_must_input_note">يجب إدخال ملاحظة</string>
+    <string name="message_must_input_title">يجب إدخال العنوان</string>
+    <string name="welcom_message">مرحبًا ، أضف ملاحظاتك هنا بالضغط على الصورة السفلية ، سهل الاستخدام
+  يمكن للتطبيق التحديث على الملاحظة بالضغط على القلم ، واسحب لحذفه من القائمة</string>
+
+</resources>
