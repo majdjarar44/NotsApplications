@@ -7,7 +7,7 @@ import com.tapadoo.alerter.Alerter
 
 object AlertUtil {
 
-    fun showError(activity: Activity, title: Int, message: String) {
+    fun showError(activity: Activity,item:Int, message: String) {
         if (activity.isFinishing || activity.isDestroyed) return
         Alerter.create(activity)
             .setTitle(activity.getString(R.string.error_title))

@@ -13,6 +13,7 @@ import com.mcit.notsapplication.global.StatusFragment
 import com.mcit.notsapplication.models.NotesModel
 import com.mcit.notsapplication.ui.fragment.main.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collect
 
 @AndroidEntryPoint
 class WriteNotesFragment : BaseFragment() {
@@ -29,10 +30,12 @@ class WriteNotesFragment : BaseFragment() {
         binding = FragmentWriteNotesBinding.inflate(inflater, container, false)
         return binding.root
     }
-//do delete
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         binding.note = viewModel
+
         var usingType = arguments?.get(STATUS) as StatusFragment
         when (usingType) {
             StatusFragment.SHOW -> {
@@ -53,12 +56,12 @@ class WriteNotesFragment : BaseFragment() {
         binding.saveBtn.text = getString(R.string.update)
         binding.saveBtn.setOnClickListener {
             viewModel.update(noteObjectAdd())
-          doSuccessAction(getString(R.string.message_success_update_note))
+            doSuccessAction(getString(R.string.message_success_update_note))
 
         }
     }
 
-    private fun doSuccessAction(message:String) {
+    private fun doSuccessAction(message: String) {
         showSuccessMessage(message)
         findNavController().popBackStack()
     }

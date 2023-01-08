@@ -2,6 +2,7 @@ package com.mcit.notsapplication.di
 
 import android.content.Context
 import com.google.gson.Gson
+import com.google.gson.GsonBuilder
 import com.mcit.notsapplication.BuildConfig
 import com.mcit.notsapplication.data.local.NotesDataBase
 import com.mcit.notsapplication.data.remote.AppService
@@ -35,6 +36,11 @@ object AppModule {
             .build()
         return retrofit.create(AppService::class.java)
     }
+
+
+    @Provides
+    fun provideGson(): Gson = GsonBuilder().create()
+
     @Singleton
     @Provides
     fun provideCategoryDao(db: NotesDataBase) = db.userNotes()

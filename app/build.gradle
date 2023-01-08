@@ -29,11 +29,11 @@ android {
 
             release {
                 minifyEnabled false
-                buildConfigField "String", "BASE_URl",  '""'
+                buildConfigField "String", "BASE_URl",  '"https://notes.org/"'
                 proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             }
             debug {
-                buildConfigField "String", "BASE_URl",  '""'
+                buildConfigField "String", "BASE_URl",  '"https://notes.org/"'
             }
         }
         compileOptions {

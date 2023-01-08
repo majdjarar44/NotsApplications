@@ -4,5 +4,5 @@ import com.mcit.notsapplication.global.BaseDataSource
 import javax.inject.Inject
 
 class RemoteDataSource @Inject constructor(val appService: AppService) : BaseDataSource(){
-
+fun getAllNotes()=appService.getNotes()
 }

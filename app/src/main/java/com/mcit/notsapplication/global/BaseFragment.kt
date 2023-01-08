@@ -2,9 +2,7 @@ package com.mcit.notsapplication.global
 
 import android.os.Bundle
 import android.view.*
-import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.mcit.notsapplication.R
 import com.mcit.notsapplication.ui.activity.MainActivity
