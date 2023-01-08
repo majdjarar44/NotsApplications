@@ -54,7 +54,8 @@ class MainNotesFragment : BaseFragment() {
 
     private fun initialRecyclerView() {
         binding.rvNotes.layoutManager = LinearLayoutManager(requireContext())
-        adapter = MainNotesAdapterTwo({ model ->
+        adapter = MainNotesAdapterTwo(
+            { model ->
             viewNote(model)
         }, { model ->
             updateNote(model)

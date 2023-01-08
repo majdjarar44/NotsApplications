@@ -29,8 +29,3 @@ inline fun <reified T : Any> SharedPreferences.getArrayList(key: String): ArrayL
 }
 
 fun main(work: suspend (() -> Unit)) = CoroutineScope(Dispatchers.IO).launch { work() }
-fun <T> performRemoteOperation2(databaseQuery: () -> LiveData<T>): LiveData<Resource<T>> =
-    liveData(Dispatchers.IO) {
-        val source = databaseQuery.invoke().map { Resource.success(it) }
-        emitSource(source)
-    }
